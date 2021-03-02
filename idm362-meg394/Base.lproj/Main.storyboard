@@ -8,6 +8,17 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Otama-ep.ttf">
+            <string>Otama-ep</string>
+        </array>
+        <array key="ProximaNovaBlack.ttf">
+            <string>ProximaNova-Black</string>
+        </array>
+        <array key="ProximaNovaCondensedBold.ttf">
+            <string>ProximaNovaCond-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--RECIPE CONVERT-->
         <scene sceneID="k6p-B3-ifG">
@@ -17,9 +28,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECIPE CONVERTER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4j-Zx-HWM">
-                                <rect key="frame" x="21.5" y="20" width="332.5" height="40"/>
-                                <fontDescription key="fontDescription" name="FuturaPTCond-Bold" family="Futura PT Cond" pointSize="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Converter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4j-Zx-HWM">
+                                <rect key="frame" x="74" y="20" width="227" height="30"/>
+                                <fontDescription key="fontDescription" name="Otama-ep" family="Otama.ep" pointSize="30"/>
                                 <color key="textColor" name="AccentWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -27,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="443" width="375" height="175"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh3-vG-GPU">
-                                        <rect key="frame" x="179" y="34" width="17" height="14"/>
+                                        <rect key="frame" x="181" y="34" width="13" height="15"/>
                                         <attributedString key="attributedText">
                                             <fragment content="TO">
                                                 <attributes>
@@ -37,7 +48,7 @@
                                         </attributedString>
                                         <color key="highlightedColor" name="AccentWhite"/>
                                     </label>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4Z-dV-0fB">
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4Z-dV-0fB">
                                         <rect key="frame" x="100" y="105" width="175" height="50"/>
                                         <color key="backgroundColor" name="AccentWhite80"/>
                                         <constraints>
@@ -59,14 +70,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="196" height="175"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="LPA-yl-HO6">
-                                                <rect key="frame" x="61" y="20" width="74" height="42.5"/>
+                                                <rect key="frame" x="65.5" y="20" width="65" height="38.5"/>
                                                 <color key="tintColor" name="AccentWhite"/>
                                                 <color key="textColor" name="AccentWhite"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Black" family="Proxima Nova" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="se9-Ey-IXJ">
-                                                <rect key="frame" x="53" y="64.5" width="90" height="2"/>
+                                                <rect key="frame" x="53" y="60.5" width="90" height="2"/>
                                                 <color key="backgroundColor" name="AccentOrangeDark"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="1vu-gm-oTm"/>
@@ -74,7 +85,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khA-3d-A16">
-                                                <rect key="frame" x="68" y="76.5" width="60" height="14"/>
+                                                <rect key="frame" x="74" y="72.5" width="48.5" height="15"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="SERVINGS">
                                                         <attributes>
@@ -101,14 +112,14 @@
                                         <rect key="frame" x="179" y="0.0" width="196" height="175"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="sOz-Es-Suh">
-                                                <rect key="frame" x="61" y="20" width="74" height="42.5"/>
+                                                <rect key="frame" x="65.5" y="20" width="65" height="38.5"/>
                                                 <color key="tintColor" name="AccentWhite"/>
                                                 <color key="textColor" name="AccentWhite"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Black" family="Proxima Nova" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQd-ZF-vg0">
-                                                <rect key="frame" x="53" y="64.5" width="90" height="2"/>
+                                                <rect key="frame" x="53" y="60.5" width="90" height="2"/>
                                                 <color key="backgroundColor" name="AccentOrangeDark"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="eUp-KC-nx3"/>
@@ -116,7 +127,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0r-6Z-PPx">
-                                                <rect key="frame" x="68" y="76.5" width="60" height="14"/>
+                                                <rect key="frame" x="74" y="72.5" width="48.5" height="15"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="SERVINGS">
                                                         <attributes>
@@ -154,7 +165,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gN-JI-NVR">
-                                <rect key="frame" x="0.0" y="210" width="375" height="35"/>
+                                <rect key="frame" x="0.0" y="200" width="375" height="35"/>
                                 <subviews>
                                     <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MEASUREMENT" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="oO8-PP-1hG">
                                         <rect key="frame" x="20" y="0.0" width="100" height="35"/>
@@ -165,7 +176,7 @@
                                             <constraint firstAttribute="width" constant="100" id="WWy-lT-GYI"/>
                                         </constraints>
                                         <color key="textColor" name="AccentBlack"/>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -201,7 +212,7 @@
                                             <constraint firstAttribute="width" constant="100" id="vpS-kv-qWc"/>
                                         </constraints>
                                         <color key="textColor" name="AccentBlack"/>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -221,7 +232,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45P-nG-Erg">
-                                <rect key="frame" x="0.0" y="160" width="375" height="35"/>
+                                <rect key="frame" x="0.0" y="150" width="375" height="35"/>
                                 <subviews>
                                     <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MEASUREMENT" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ab6-Zu-BXb">
                                         <rect key="frame" x="20" y="0.0" width="100" height="35"/>
@@ -232,7 +243,7 @@
                                             <constraint firstAttribute="height" constant="35" id="xSs-st-Lra"/>
                                         </constraints>
                                         <color key="textColor" name="AccentBlack"/>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -268,7 +279,7 @@
                                             <constraint firstAttribute="height" constant="35" id="c1M-Qk-j4F"/>
                                         </constraints>
                                         <color key="textColor" name="AccentBlack"/>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -288,7 +299,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dg-fY-QNv">
-                                <rect key="frame" x="0.0" y="110" width="375" height="35"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="35"/>
                                 <subviews>
                                     <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MEASUREMENT" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="YJY-7e-nHt">
                                         <rect key="frame" x="20" y="0.0" width="100" height="35"/>
@@ -299,7 +310,7 @@
                                             <constraint firstAttribute="height" constant="35" id="hyx-6D-rOy"/>
                                         </constraints>
                                         <color key="textColor" name="AccentBlack"/>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -335,7 +346,7 @@
                                             <constraint firstAttribute="width" constant="100" id="xw4-Au-4iR"/>
                                         </constraints>
                                         <color key="textColor" name="AccentBlack"/>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -354,11 +365,10 @@
                                     <constraint firstItem="10z-0f-Fwu" firstAttribute="centerX" secondItem="1dg-fY-QNv" secondAttribute="centerX" id="wgZ-4P-dSL"/>
                                 </constraints>
                             </view>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2L-uj-9Rx">
-                                <rect key="frame" x="20" y="260" width="125" height="30"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2L-uj-9Rx">
+                                <rect key="frame" x="20" y="250" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VMc-ti-7Gt"/>
-                                    <constraint firstAttribute="width" constant="125" id="asd-IE-cef"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
                                 <color key="tintColor" name="AccentOrangeDark"/>
@@ -387,6 +397,7 @@
                             <constraint firstItem="b4j-Zx-HWM" firstAttribute="centerX" secondItem="UFL-h2-gNv" secondAttribute="centerX" id="aed-9o-X01"/>
                             <constraint firstItem="1dg-fY-QNv" firstAttribute="centerX" secondItem="UFL-h2-gNv" secondAttribute="centerX" id="gkl-1L-2u8"/>
                             <constraint firstItem="45P-nG-Erg" firstAttribute="trailing" secondItem="sir-EA-um7" secondAttribute="trailing" id="hv7-he-N52"/>
+                            <constraint firstItem="sir-EA-um7" firstAttribute="trailing" secondItem="P2L-uj-9Rx" secondAttribute="trailing" constant="20" id="ubv-Se-xC7"/>
                             <constraint firstItem="CMX-1Z-pxY" firstAttribute="leading" secondItem="sir-EA-um7" secondAttribute="leading" id="udb-1N-vnn"/>
                             <constraint firstItem="5gN-JI-NVR" firstAttribute="top" secondItem="45P-nG-Erg" secondAttribute="bottom" constant="15" id="vKe-Tw-jsg"/>
                             <constraint firstItem="b4j-Zx-HWM" firstAttribute="top" secondItem="sir-EA-um7" secondAttribute="top" constant="20" id="vn3-Yo-f0c"/>
@@ -403,14 +414,14 @@
         <!--QUICK CONVERT-->
         <scene sceneID="fIQ-mR-QQg">
             <objects>
-                <viewController id="ppz-hs-4Jj" sceneMemberID="viewController">
+                <viewController id="ppz-hs-4Jj" customClass="ViewController" customModule="idm362_meg394" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JIz-kV-Zqg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUICK CONVERT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHq-PN-pMH">
-                                <rect key="frame" x="26" y="30" width="323" height="47"/>
-                                <fontDescription key="fontDescription" name="FuturaPTCond-Bold" family="Futura PT Cond" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Convert" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHq-PN-pMH">
+                                <rect key="frame" x="89.5" y="30" width="196" height="30"/>
+                                <fontDescription key="fontDescription" name="Otama-ep" family="Otama.ep" pointSize="30"/>
                                 <color key="textColor" name="AccentWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -418,7 +429,7 @@
                                 <rect key="frame" x="0.0" y="246" width="375" height="175"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pK8-Aq-XPj">
-                                        <rect key="frame" x="179" y="14" width="17" height="14"/>
+                                        <rect key="frame" x="181" y="14" width="13" height="15"/>
                                         <attributedString key="attributedText">
                                             <fragment content="TO">
                                                 <attributes>
@@ -428,15 +439,14 @@
                                         </attributedString>
                                         <color key="highlightedColor" name="AccentWhite"/>
                                     </label>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnL-oP-n92">
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnL-oP-n92">
                                         <rect key="frame" x="100" y="125" width="175" height="50"/>
                                         <color key="backgroundColor" name="AccentWhite80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="175" id="PwP-HU-kmy"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="eFe-Up-WHz"/>
                                             <constraint firstAttribute="height" constant="50" id="hga-o9-Jjd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="20"/>
-                                        <color key="tintColor" name="AccentBlack"/>
                                         <state key="normal" title="CONVERT">
                                             <color key="titleColor" name="AccentBlack"/>
                                         </state>
@@ -450,14 +460,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="196" height="175"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="61o-y8-uRd">
-                                                <rect key="frame" x="61" y="0.0" width="74" height="42.5"/>
+                                                <rect key="frame" x="65.5" y="0.0" width="65" height="38.5"/>
                                                 <color key="tintColor" name="AccentWhite"/>
                                                 <color key="textColor" name="AccentWhite"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Black" family="Proxima Nova" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-k3-c87">
-                                                <rect key="frame" x="53" y="44.5" width="90" height="2"/>
+                                                <rect key="frame" x="53" y="40.5" width="90" height="2"/>
                                                 <color key="backgroundColor" name="AccentOrangeDark"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="cLI-9m-wlJ"/>
@@ -465,10 +475,10 @@
                                                 </constraints>
                                             </view>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cB7-Me-sSQ">
-                                                <rect key="frame" x="35.5" y="56.5" width="125" height="30"/>
+                                                <rect key="frame" x="35.5" y="52.5" width="125" height="30"/>
                                                 <color key="backgroundColor" name="AccentWhite80"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="125" id="hoB-Kj-4An"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="fmr-Kz-ADy"/>
                                                     <constraint firstAttribute="height" constant="30" id="zPN-YH-SMQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
@@ -499,10 +509,10 @@
                                         <rect key="frame" x="179" y="0.0" width="196" height="175"/>
                                         <subviews>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6o-I2-P2X">
-                                                <rect key="frame" x="35.5" y="56.5" width="125" height="30"/>
+                                                <rect key="frame" x="35.5" y="52.5" width="125" height="30"/>
                                                 <color key="backgroundColor" name="AccentWhite80"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="125" id="WAP-0v-k2y"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="Wvl-tB-F4H"/>
                                                     <constraint firstAttribute="height" constant="30" id="YCK-KW-m5j"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
@@ -518,14 +528,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="eWi-13-vrT">
-                                                <rect key="frame" x="61" y="0.0" width="74" height="42.5"/>
+                                                <rect key="frame" x="65.5" y="0.0" width="65" height="38.5"/>
                                                 <color key="tintColor" name="AccentWhite"/>
                                                 <color key="textColor" name="AccentWhite"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Black" family="Proxima Nova" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sC6-g3-2aD">
-                                                <rect key="frame" x="53" y="44.5" width="90" height="2"/>
+                                                <rect key="frame" x="53" y="40.5" width="90" height="2"/>
                                                 <color key="backgroundColor" name="AccentOrangeDark"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="WHv-kH-WNv"/>
@@ -610,7 +620,7 @@
             <color red="0.94901960784313721" green="0.53333333333333333" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AccentOrange30">
-            <color red="0.93725490196078431" green="0.45098039215686275" blue="0.14901960784313725" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93725490196078431" green="0.45098039215686275" blue="0.14901960784313725" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AccentOrangeDark">
             <color red="0.8901960784313725" green="0.31764705882352939" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -622,10 +632,10 @@
             <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AccentWhite80">
-            <color red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AccentWhite90">
-            <color red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AppColor">
             <color red="0.94901960784313721" green="0.74509803921568629" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -1,13 +1,14 @@
 //
-//  ViewController.swift
+//  RecipeViewController.swift
 //  idm362-meg394
 //
-//  Created by Melissa Gabriele on 1/20/21.
+//  Created by Melissa Gabriele on 3/1/21.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecipeViewController: UIViewController {
+
     //OUTLETS.
     
     
@@ -27,4 +28,3 @@ class ViewController: UIViewController {
 
 
 }
-

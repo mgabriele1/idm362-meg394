@@ -13,6 +13,10 @@
 		A65EC73225B8C3BA00DF23D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65EC73025B8C3BA00DF23D3 /* Main.storyboard */; };
 		A65EC73425B8C3BC00DF23D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65EC73325B8C3BC00DF23D3 /* Assets.xcassets */; };
 		A65EC73725B8C3BC00DF23D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65EC73525B8C3BC00DF23D3 /* LaunchScreen.storyboard */; };
+		A6B1941825EDB4B00005D8F0 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B1941725EDB4B00005D8F0 /* RecipeViewController.swift */; };
+		A6B1941E25EDD4070005D8F0 /* Otama-ep.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B1941B25EDD4070005D8F0 /* Otama-ep.ttf */; };
+		A6B1941F25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B1941C25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf */; };
+		A6B1942025EDD4070005D8F0 /* ProximaNovaBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B1941D25EDD4070005D8F0 /* ProximaNovaBlack.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A65EC73325B8C3BC00DF23D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65EC73625B8C3BC00DF23D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A65EC73825B8C3BC00DF23D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B1941725EDB4B00005D8F0 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		A6B1941B25EDD4070005D8F0 /* Otama-ep.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Otama-ep.ttf"; sourceTree = "<group>"; };
+		A6B1941C25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaCondensedBold.ttf; sourceTree = "<group>"; };
+		A6B1941D25EDD4070005D8F0 /* ProximaNovaBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaBlack.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,7 @@
 			children = (
 				A65EC72925B8C3BA00DF23D3 /* idm362-meg394 */,
 				A65EC72825B8C3BA00DF23D3 /* Products */,
+				A6B1941A25EDD4070005D8F0 /* fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,19 @@
 				A65EC73325B8C3BC00DF23D3 /* Assets.xcassets */,
 				A65EC73525B8C3BC00DF23D3 /* LaunchScreen.storyboard */,
 				A65EC73825B8C3BC00DF23D3 /* Info.plist */,
+				A6B1941725EDB4B00005D8F0 /* RecipeViewController.swift */,
 			);
 			path = "idm362-meg394";
+			sourceTree = "<group>";
+		};
+		A6B1941A25EDD4070005D8F0 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A6B1941B25EDD4070005D8F0 /* Otama-ep.ttf */,
+				A6B1941C25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf */,
+				A6B1941D25EDD4070005D8F0 /* ProximaNovaBlack.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +144,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B1941E25EDD4070005D8F0 /* Otama-ep.ttf in Resources */,
 				A65EC73725B8C3BC00DF23D3 /* LaunchScreen.storyboard in Resources */,
 				A65EC73425B8C3BC00DF23D3 /* Assets.xcassets in Resources */,
 				A65EC73225B8C3BA00DF23D3 /* Main.storyboard in Resources */,
+				A6B1941F25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf in Resources */,
+				A6B1942025EDD4070005D8F0 /* ProximaNovaBlack.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B1941825EDB4B00005D8F0 /* RecipeViewController.swift in Sources */,
 				A65EC72F25B8C3BA00DF23D3 /* ViewController.swift in Sources */,
 				A65EC72B25B8C3BA00DF23D3 /* AppDelegate.swift in Sources */,
 				A65EC72D25B8C3BA00DF23D3 /* SceneDelegate.swift in Sources */,
