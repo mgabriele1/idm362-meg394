@@ -21,9 +21,6 @@ class ViewController: UIViewController {
     
     //EXTRA FUNCTIONS.
     //disable keyboard when click elsewhere.
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-    }
 
 
 }
