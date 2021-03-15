@@ -329,8 +329,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ2-JU-iMf">
-                                <rect key="frame" x="331" y="20" width="24" height="24"/>
-                                <state key="normal" backgroundImage="settings-close"/>
+                                <rect key="frame" x="324" y="20" width="31" height="31"/>
+                                <color key="tintColor" name="orange-3"/>
+                                <state key="normal" backgroundImage="settings-close-1"/>
                                 <connections>
                                     <segue destination="Vbq-xO-B8K" kind="show" id="a9N-OW-Op6"/>
                                 </connections>
@@ -383,6 +384,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pinkButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="ZQM-Q9-w4V"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CF-WU-qsI">
                                         <rect key="frame" x="0.0" y="94" width="102" height="59.5"/>
@@ -395,6 +399,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="greenButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="1VE-7h-ELC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTS-yc-ydf">
                                         <rect key="frame" x="0.0" y="187.5" width="102" height="60"/>
@@ -407,6 +414,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="blueButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="HG8-jx-fjq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -424,6 +434,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="orangeButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="xmW-Wh-FLM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWL-XJ-al2">
                                         <rect key="frame" x="0.0" y="94" width="102" height="60"/>
@@ -436,6 +449,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="aquaButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="Gea-JO-lmT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ero-vC-UdK">
                                         <rect key="frame" x="0.0" y="188" width="102" height="60"/>
@@ -448,6 +464,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="purpleButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="YpM-Jn-d4X"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -475,6 +494,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mf8-ZK-HYd"/>
+                    <connections>
+                        <outlet property="aquaButtonOut" destination="YWL-XJ-al2" id="kyk-xA-zSL"/>
+                        <outlet property="blueButtonOut" destination="kTS-yc-ydf" id="kgz-Ds-GNN"/>
+                        <outlet property="closeSettings" destination="JJ2-JU-iMf" id="Z3s-iZ-c3C"/>
+                        <outlet property="greenButtonOut" destination="2CF-WU-qsI" id="VFY-qs-dUu"/>
+                        <outlet property="orangeButtonOut" destination="gV5-LO-adn" id="iFx-lq-Vdf"/>
+                        <outlet property="pinkButtonOut" destination="RNn-tH-Q4e" id="Z8q-b2-xDf"/>
+                        <outlet property="purpleButtonOut" destination="Ero-vC-UdK" id="9H8-Yt-C9T"/>
+                        <outlet property="soundSwitch" destination="5Aj-pH-Usg" id="e5G-RT-fw9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9OI-Ep-I2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -488,7 +517,7 @@
         <image name="measure-tablespoon" width="46" height="45"/>
         <image name="measure-teaspoon" width="46" height="46.5"/>
         <image name="settings" width="27" height="27"/>
-        <image name="settings-close" width="24" height="24"/>
+        <image name="settings-close-1" width="31" height="31"/>
         <image name="theme-aqua" width="102" height="60"/>
         <image name="theme-blue" width="102" height="60"/>
         <image name="theme-green" width="102" height="59.5"/>
