@@ -8,19 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-    //OUTLETS.
     
+    //OUTLETS.
+    @IBOutlet weak var inputField: UITextField!
     
     //AFTER LOAD FUNCTION.
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do after loading.
+        inputField.keyboardType = .numberPad //numeric keyboaed
     }
     
     //ACTIONS.
     
     //EXTRA FUNCTIONS.
-    //disable keyboard when click elsewhere.
+    //disable keyboard when click elsewhere
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
 
 
 }

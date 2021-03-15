@@ -40,6 +40,12 @@ class SettingsViewController: UIViewController {
         pinkButtonOut.layer.shadowColor = UIColor.white.cgColor
         pinkButtonOut.layer.shadowRadius = 10
         pinkButtonOut.layer.shadowOpacity = 0.85
+        //turn off other shadows
+        greenButtonOut.layer.shadowOpacity = 0
+        blueButtonOut.layer.shadowOpacity = 0
+        orangeButtonOut.layer.shadowOpacity = 0
+        aquaButtonOut.layer.shadowOpacity = 0
+        purpleButtonOut.layer.shadowOpacity = 0
     }
     
     @IBAction func greenButton(_ sender: UIButton) {
@@ -53,6 +59,12 @@ class SettingsViewController: UIViewController {
         greenButtonOut.layer.shadowColor = UIColor.white.cgColor
         greenButtonOut.layer.shadowRadius = 10
         greenButtonOut.layer.shadowOpacity = 0.85
+        //turn off other shadows
+        pinkButtonOut.layer.shadowOpacity = 0
+        blueButtonOut.layer.shadowOpacity = 0
+        orangeButtonOut.layer.shadowOpacity = 0
+        aquaButtonOut.layer.shadowOpacity = 0
+        purpleButtonOut.layer.shadowOpacity = 0
     }
     
     @IBAction func blueButton(_ sender: UIButton) {
@@ -66,6 +78,12 @@ class SettingsViewController: UIViewController {
         blueButtonOut.layer.shadowColor = UIColor.white.cgColor
         blueButtonOut.layer.shadowRadius = 10
         blueButtonOut.layer.shadowOpacity = 0.85
+        //turn off other shadows
+        pinkButtonOut.layer.shadowOpacity = 0
+        greenButtonOut.layer.shadowOpacity = 0
+        orangeButtonOut.layer.shadowOpacity = 0
+        aquaButtonOut.layer.shadowOpacity = 0
+        purpleButtonOut.layer.shadowOpacity = 0
     }
     
     @IBAction func orangeButton(_ sender: UIButton) {
@@ -79,6 +97,12 @@ class SettingsViewController: UIViewController {
         orangeButtonOut.layer.shadowColor = UIColor.white.cgColor
         orangeButtonOut.layer.shadowRadius = 10
         orangeButtonOut.layer.shadowOpacity = 0.85
+        //turn off other shadows
+        pinkButtonOut.layer.shadowOpacity = 0
+        greenButtonOut.layer.shadowOpacity = 0
+        blueButtonOut.layer.shadowOpacity = 0
+        aquaButtonOut.layer.shadowOpacity = 0
+        purpleButtonOut.layer.shadowOpacity = 0
     }
    
     @IBAction func aquaButton(_ sender: UIButton) {
@@ -92,6 +116,12 @@ class SettingsViewController: UIViewController {
         aquaButtonOut.layer.shadowColor = UIColor.white.cgColor
         aquaButtonOut.layer.shadowRadius = 10
         aquaButtonOut.layer.shadowOpacity = 0.85
+        //turn off other shadows
+        pinkButtonOut.layer.shadowOpacity = 0
+        greenButtonOut.layer.shadowOpacity = 0
+        blueButtonOut.layer.shadowOpacity = 0
+        orangeButtonOut.layer.shadowOpacity = 0
+        purpleButtonOut.layer.shadowOpacity = 0
     }
     
     @IBAction func purpleButton(_ sender: UIButton) {
@@ -105,6 +135,12 @@ class SettingsViewController: UIViewController {
         purpleButtonOut.layer.shadowColor = UIColor.white.cgColor
         purpleButtonOut.layer.shadowRadius = 10
         purpleButtonOut.layer.shadowOpacity = 0.85
+        //turn off other shadows
+        pinkButtonOut.layer.shadowOpacity = 0
+        greenButtonOut.layer.shadowOpacity = 0
+        blueButtonOut.layer.shadowOpacity = 0
+        orangeButtonOut.layer.shadowOpacity = 0
+        aquaButtonOut.layer.shadowOpacity = 0
     }
     
     

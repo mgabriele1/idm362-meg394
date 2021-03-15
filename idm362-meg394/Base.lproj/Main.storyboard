@@ -60,14 +60,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="mSC-IJ-9E1">
                                         <rect key="frame" x="47" y="10" width="281" height="50.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uef-lW-L1L">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uef-lW-L1L">
                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="50.5"/>
                                                 <color key="backgroundColor" name="orange-3"/>
                                                 <color key="textColor" name="white"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Black" family="Proxima Nova" pointSize="35"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Dl-ZF-K3L">
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Dl-ZF-K3L">
                                                 <rect key="frame" x="184" y="0.0" width="97" height="50.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" name="white"/>
@@ -309,6 +309,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BXz-9D-4xD"/>
+                    <connections>
+                        <outlet property="inputField" destination="Uef-lW-L1L" id="W6F-u5-wDa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrI-HI-4BZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
