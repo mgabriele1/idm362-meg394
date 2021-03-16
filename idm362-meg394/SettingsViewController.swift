@@ -26,9 +26,9 @@ class SettingsViewController: UIViewController {
         //orange button hilighted on click
         orangeButtonOut.layer.shadowColor = UIColor.white.cgColor
         orangeButtonOut.layer.shadowRadius = 10
-        orangeButtonOut.layer.shadowOpacity = 0.85
-
-    }
+        orangeButtonOut.layer.shadowOpacity = 0.9
+        
+    } //end view load
     
     //ACTION
     @IBAction func pinkButton(_ sender: UIButton) {
@@ -40,8 +40,8 @@ class SettingsViewController: UIViewController {
             closeSettings.tintColor = UIColor(named: "pink-3")
             //shadow on button clicked
             pinkButtonOut.layer.shadowColor = UIColor.white.cgColor
-            pinkButtonOut.layer.shadowRadius = 10
-            pinkButtonOut.layer.shadowOpacity = 0.85
+            pinkButtonOut.layer.shadowRadius = 15
+            pinkButtonOut.layer.shadowOpacity = 0.9
             //turn off other shadows
             greenButtonOut.layer.shadowOpacity = 0
             blueButtonOut.layer.shadowOpacity = 0
@@ -59,8 +59,8 @@ class SettingsViewController: UIViewController {
         closeSettings.tintColor = UIColor(named: "green-3")
         //shadow on button clicked
         greenButtonOut.layer.shadowColor = UIColor.white.cgColor
-        greenButtonOut.layer.shadowRadius = 10
-        greenButtonOut.layer.shadowOpacity = 0.85
+        greenButtonOut.layer.shadowRadius = 15
+        greenButtonOut.layer.shadowOpacity = 0.9
         //turn off other shadows
         pinkButtonOut.layer.shadowOpacity = 0
         blueButtonOut.layer.shadowOpacity = 0
@@ -78,8 +78,8 @@ class SettingsViewController: UIViewController {
         closeSettings.tintColor = UIColor(named: "blue-3")
         //shadow on button clicked
         blueButtonOut.layer.shadowColor = UIColor.white.cgColor
-        blueButtonOut.layer.shadowRadius = 10
-        blueButtonOut.layer.shadowOpacity = 0.85
+        blueButtonOut.layer.shadowRadius = 15
+        blueButtonOut.layer.shadowOpacity = 0.9
         //turn off other shadows
         pinkButtonOut.layer.shadowOpacity = 0
         greenButtonOut.layer.shadowOpacity = 0
@@ -97,8 +97,8 @@ class SettingsViewController: UIViewController {
         closeSettings.tintColor = UIColor(named: "orange-3")
         //shadow on button clicked
         orangeButtonOut.layer.shadowColor = UIColor.white.cgColor
-        orangeButtonOut.layer.shadowRadius = 10
-        orangeButtonOut.layer.shadowOpacity = 0.85
+        orangeButtonOut.layer.shadowRadius = 15
+        orangeButtonOut.layer.shadowOpacity = 0.9
         //turn off other shadows
         pinkButtonOut.layer.shadowOpacity = 0
         greenButtonOut.layer.shadowOpacity = 0
@@ -116,8 +116,8 @@ class SettingsViewController: UIViewController {
         closeSettings.tintColor = UIColor(named: "aqua-3")
         //shadow on button clicked
         aquaButtonOut.layer.shadowColor = UIColor.white.cgColor
-        aquaButtonOut.layer.shadowRadius = 10
-        aquaButtonOut.layer.shadowOpacity = 0.85
+        aquaButtonOut.layer.shadowRadius = 15
+        aquaButtonOut.layer.shadowOpacity = 0.9
         //turn off other shadows
         pinkButtonOut.layer.shadowOpacity = 0
         greenButtonOut.layer.shadowOpacity = 0
@@ -135,8 +135,8 @@ class SettingsViewController: UIViewController {
         closeSettings.tintColor = UIColor(named: "purple-3")
         //shadow on button clicked
         purpleButtonOut.layer.shadowColor = UIColor.white.cgColor
-        purpleButtonOut.layer.shadowRadius = 10
-        purpleButtonOut.layer.shadowOpacity = 0.85
+        purpleButtonOut.layer.shadowRadius = 15
+        purpleButtonOut.layer.shadowOpacity = 0.9
         //turn off other shadows
         pinkButtonOut.layer.shadowOpacity = 0
         greenButtonOut.layer.shadowOpacity = 0

@@ -7,20 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6147FA92601543900AC77F4 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = A6147FA82601543900AC77F4 /* sounds */; };
 		A61D93D025F2E708000DD928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61D93CF25F2E708000DD928 /* Assets.xcassets */; };
 		A65EC72B25B8C3BA00DF23D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EC72A25B8C3BA00DF23D3 /* AppDelegate.swift */; };
 		A65EC72D25B8C3BA00DF23D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EC72C25B8C3BA00DF23D3 /* SceneDelegate.swift */; };
 		A65EC72F25B8C3BA00DF23D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EC72E25B8C3BA00DF23D3 /* ViewController.swift */; };
 		A65EC73225B8C3BA00DF23D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65EC73025B8C3BA00DF23D3 /* Main.storyboard */; };
 		A65EC73725B8C3BC00DF23D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65EC73525B8C3BC00DF23D3 /* LaunchScreen.storyboard */; };
-		A6B1941E25EDD4070005D8F0 /* Otama-ep.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B1941B25EDD4070005D8F0 /* Otama-ep.ttf */; };
-		A6B1941F25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B1941C25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf */; };
-		A6B1942025EDD4070005D8F0 /* ProximaNovaBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B1941D25EDD4070005D8F0 /* ProximaNovaBlack.ttf */; };
 		A6E9DA6B25F34B64006825A5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9DA6A25F34B64006825A5 /* SettingsViewController.swift */; };
+		A6EF4B8226015B1A00519AAE /* ProximaNovaBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6147FAF2601546B00AC77F4 /* ProximaNovaBlack.ttf */; };
+		A6EF4B8426015B1C00519AAE /* ProximaNovaCondensedBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6147FAE2601546B00AC77F4 /* ProximaNovaCondensedBold.ttf */; };
+		A6EF4B8626015B1E00519AAE /* Otama-ep.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6147FAD2601546B00AC77F4 /* Otama-ep.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A61D93CF25F2E708000DD928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6147FA82601543900AC77F4 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
+		A6147FAD2601546B00AC77F4 /* Otama-ep.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Otama-ep.ttf"; sourceTree = "<group>"; };
+		A6147FAE2601546B00AC77F4 /* ProximaNovaCondensedBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaCondensedBold.ttf; sourceTree = "<group>"; };
+		A6147FAF2601546B00AC77F4 /* ProximaNovaBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaBlack.ttf; sourceTree = "<group>"; };
+		A61D93CF25F2E708000DD928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		A65EC72725B8C3BA00DF23D3 /* idm362-meg394.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-meg394.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65EC72A25B8C3BA00DF23D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A65EC72C25B8C3BA00DF23D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,9 +33,6 @@
 		A65EC73125B8C3BA00DF23D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A65EC73625B8C3BC00DF23D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A65EC73825B8C3BC00DF23D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6B1941B25EDD4070005D8F0 /* Otama-ep.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Otama-ep.ttf"; sourceTree = "<group>"; };
-		A6B1941C25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaCondensedBold.ttf; sourceTree = "<group>"; };
-		A6B1941D25EDD4070005D8F0 /* ProximaNovaBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaBlack.ttf; sourceTree = "<group>"; };
 		A6E9DA6A25F34B64006825A5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,13 +47,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6147FAC2601546B00AC77F4 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A6147FAD2601546B00AC77F4 /* Otama-ep.ttf */,
+				A6147FAE2601546B00AC77F4 /* ProximaNovaCondensedBold.ttf */,
+				A6147FAF2601546B00AC77F4 /* ProximaNovaBlack.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		A65EC71E25B8C3BA00DF23D3 = {
 			isa = PBXGroup;
 			children = (
-				A61D93CF25F2E708000DD928 /* Assets.xcassets */,
 				A65EC72925B8C3BA00DF23D3 /* idm362-meg394 */,
+				A6147FAC2601546B00AC77F4 /* fonts */,
+				A6147FA82601543900AC77F4 /* sounds */,
 				A65EC72825B8C3BA00DF23D3 /* Products */,
-				A6B1941A25EDD4070005D8F0 /* fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +78,7 @@
 		A65EC72925B8C3BA00DF23D3 /* idm362-meg394 */ = {
 			isa = PBXGroup;
 			children = (
+				A61D93CF25F2E708000DD928 /* Assets.xcassets */,
 				A65EC72A25B8C3BA00DF23D3 /* AppDelegate.swift */,
 				A65EC72C25B8C3BA00DF23D3 /* SceneDelegate.swift */,
 				A65EC72E25B8C3BA00DF23D3 /* ViewController.swift */,
@@ -75,16 +88,6 @@
 				A65EC73825B8C3BC00DF23D3 /* Info.plist */,
 			);
 			path = "idm362-meg394";
-			sourceTree = "<group>";
-		};
-		A6B1941A25EDD4070005D8F0 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				A6B1941B25EDD4070005D8F0 /* Otama-ep.ttf */,
-				A6B1941C25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf */,
-				A6B1941D25EDD4070005D8F0 /* ProximaNovaBlack.ttf */,
-			);
-			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,12 +147,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6B1941E25EDD4070005D8F0 /* Otama-ep.ttf in Resources */,
+				A6EF4B8626015B1E00519AAE /* Otama-ep.ttf in Resources */,
 				A65EC73725B8C3BC00DF23D3 /* LaunchScreen.storyboard in Resources */,
+				A6147FA92601543900AC77F4 /* sounds in Resources */,
+				A6EF4B8426015B1C00519AAE /* ProximaNovaCondensedBold.ttf in Resources */,
 				A65EC73225B8C3BA00DF23D3 /* Main.storyboard in Resources */,
-				A6B1941F25EDD4070005D8F0 /* ProximaNovaCondensedBold.ttf in Resources */,
+				A6EF4B8226015B1A00519AAE /* ProximaNovaBlack.ttf in Resources */,
 				A61D93D025F2E708000DD928 /* Assets.xcassets in Resources */,
-				A6B1942025EDD4070005D8F0 /* ProximaNovaBlack.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

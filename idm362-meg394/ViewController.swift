@@ -6,12 +6,32 @@
 //
 
 import UIKit
+//Add audio and video library
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    //VARIABLES
+    //audio variable
+    var audioPlayer = AVAudioPlayer()
+    
+    //measurement variables
+    var milliliter: Float = 1
+    var teaspoon: Float = 1/4.9289
+    var tablespoon: Float = 1/14.7868
+    var cup: Float = 1/236.588
+    
+    //in and out variables
+    var inMeasure: Float = 0
+    var outMeasure: Float = 0
     
     //OUTLETS.
     //input field
     @IBOutlet weak var inputField: UITextField!
+    
+    //output field
+    @IBOutlet weak var outputField: UITextField!
+    
     
     //input measurement buttons
     @IBOutlet weak var mgInputButton: UIButton!
@@ -34,7 +54,12 @@ class ViewController: UIViewController {
         super.viewDidLoad() // Do after loading.
         
         //input numeric keyboard
-        inputField.keyboardType = .numberPad
+        inputField.keyboardType = .decimalPad
+        inputField.text = "0.00"
+        
+        //input/output border off
+        inputField.borderStyle = UITextField.BorderStyle.none
+        outputField.borderStyle = UITextField.BorderStyle.none
         
         //padding for input measurement buttons
         mgInputButton.imageEdgeInsets = UIEdgeInsets(top: 12, left: 10, bottom: 12, right: 10)
@@ -62,13 +87,60 @@ class ViewController: UIViewController {
         inputMeasurement.text = "MEASUREMENT"
         outputMeasurement.text = "MEASUREMENT"
         
+        //load audio file
+        let yumSound = Bundle.main.path(forResource: "sounds/yumyums", ofType: "mp3")
+        
+        do {
+            audioPlayer = try
+            AVAudioPlayer(contentsOf: URL(fileURLWithPath: yumSound!))
+            audioPlayer.prepareToPlay()
+            print("jawn prepped")
+        } catch {
+            print(error)
+        }
+
     } //end after load
- 
     
     //ACTIONS.
+    
+    //convert button
+    @IBAction func convertButton(_ sender: UIButton) {
+        //play yumyum audio
+        audioPlayer.play()
+        
+        //set inmeausre
+        if (inputMeasurement.text == "MILLILITER") {
+            inMeasure = milliliter
+        } else if (inputMeasurement.text == "TEASPOON") {
+            inMeasure = teaspoon
+        } else if (inputMeasurement.text == "TABLESPOON") {
+            inMeasure = tablespoon
+        } else if (inputMeasurement.text == "CUP") {
+            inMeasure = cup
+        } else {
+            inMeasure = 0
+        }
+    //set outmeasure
+        if (outputMeasurement.text == "MILLILITER") {
+            outMeasure = milliliter
+        } else if (outputMeasurement.text == "TEASPOON") {
+            outMeasure = teaspoon
+        } else if (outputMeasurement.text == "TABLESPOON") {
+            outMeasure = tablespoon
+        } else if (outputMeasurement.text == "CUP") {
+            outMeasure = cup
+        } else {
+            outMeasure = 0
+        }
+       
+        //calclulate and print new value
+        outputField.text = String(Float((inputField.text!))! * (outMeasure/inMeasure))
+        
+    }
+    
     //input buttons
     @IBAction func mgInputAction(_ sender: UIButton) {
-        inputMeasurement.text = "MILLIGRAM"
+        inputMeasurement.text = "MILLILITER"
         mgInputButton.alpha = 1
         
         //turn off other buttons
@@ -109,7 +181,7 @@ class ViewController: UIViewController {
     
     //output buttons
     @IBAction func mgOutputAction(_ sender: UIButton) {
-        outputMeasurement.text = "MILLIGRAM"
+        outputMeasurement.text = "MILLILITER"
         mgOutputButton.alpha = 1
         
         //turn off other buttons
