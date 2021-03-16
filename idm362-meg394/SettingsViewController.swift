@@ -20,32 +20,34 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var purpleButtonOut: UIButton!
     
     
-    
-    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() // Do any after loading
+        
+        //orange button hilighted on click
+        orangeButtonOut.layer.shadowColor = UIColor.white.cgColor
+        orangeButtonOut.layer.shadowRadius = 10
+        orangeButtonOut.layer.shadowOpacity = 0.85
 
-        // Do any after loading view.
     }
     
     //ACTION
     @IBAction func pinkButton(_ sender: UIButton) {
         //background color
-        self.view.backgroundColor = UIColor(named: "pink-1")
-        //switch color
-        soundSwitch.onTintColor = UIColor(named: "pink-2")
-        //x color
-        closeSettings.tintColor = UIColor(named: "pink-3")
-        //shadow on button clicked
-        pinkButtonOut.layer.shadowColor = UIColor.white.cgColor
-        pinkButtonOut.layer.shadowRadius = 10
-        pinkButtonOut.layer.shadowOpacity = 0.85
-        //turn off other shadows
-        greenButtonOut.layer.shadowOpacity = 0
-        blueButtonOut.layer.shadowOpacity = 0
-        orangeButtonOut.layer.shadowOpacity = 0
-        aquaButtonOut.layer.shadowOpacity = 0
-        purpleButtonOut.layer.shadowOpacity = 0
+            self.view.backgroundColor = UIColor(named: "pink-1")
+            //switch color
+            soundSwitch.onTintColor = UIColor(named: "pink-2")
+            //x color
+            closeSettings.tintColor = UIColor(named: "pink-3")
+            //shadow on button clicked
+            pinkButtonOut.layer.shadowColor = UIColor.white.cgColor
+            pinkButtonOut.layer.shadowRadius = 10
+            pinkButtonOut.layer.shadowOpacity = 0.85
+            //turn off other shadows
+            greenButtonOut.layer.shadowOpacity = 0
+            blueButtonOut.layer.shadowOpacity = 0
+            orangeButtonOut.layer.shadowOpacity = 0
+            aquaButtonOut.layer.shadowOpacity = 0
+            purpleButtonOut.layer.shadowOpacity = 0
     }
     
     @IBAction func greenButton(_ sender: UIButton) {
@@ -104,7 +106,7 @@ class SettingsViewController: UIViewController {
         aquaButtonOut.layer.shadowOpacity = 0
         purpleButtonOut.layer.shadowOpacity = 0
     }
-   
+    
     @IBAction func aquaButton(_ sender: UIButton) {
         //background color
         self.view.backgroundColor = UIColor(named: "aqua-1")
@@ -144,6 +146,7 @@ class SettingsViewController: UIViewController {
     }
     
     
+    
     /*
     // MARK: - Navigation
 
@@ -153,5 +156,22 @@ class SettingsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+//    //background color
+//    self.view.backgroundColor = UIColor(named: "pink-1")
+//    //switch color
+//    soundSwitch.onTintColor = UIColor(named: "pink-2")
+//    //x color
+//    closeSettings.tintColor = UIColor(named: "pink-3")
+//    //shadow on button clicked
+//    pinkButtonOut.layer.shadowColor = UIColor.white.cgColor
+//    pinkButtonOut.layer.shadowRadius = 10
+//    pinkButtonOut.layer.shadowOpacity = 0.85
+//    //turn off other shadows
+//    greenButtonOut.layer.shadowOpacity = 0
+//    blueButtonOut.layer.shadowOpacity = 0
+//    orangeButtonOut.layer.shadowOpacity = 0
+//    aquaButtonOut.layer.shadowOpacity = 0
+//    purpleButtonOut.layer.shadowOpacity = 0
 
 } //end

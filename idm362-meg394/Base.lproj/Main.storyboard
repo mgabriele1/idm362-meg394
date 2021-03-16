@@ -24,24 +24,25 @@
             <objects>
                 <viewController id="Vbq-xO-B8K" userLabel="Convert" customClass="ViewController" customModule="idm362_meg394" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0g6-y2-qp8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tit-Hz-s50">
-                                <rect key="frame" x="20" y="30" width="335" height="35"/>
-                                <fontDescription key="fontDescription" name="Otama-ep" family="Otama.ep" pointSize="30"/>
+                                <rect key="frame" x="20" y="30" width="335" height="47"/>
+                                <fontDescription key="fontDescription" name="Otama-ep" family="Otama.ep" pointSize="40"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7W-CP-QMB">
-                                <rect key="frame" x="328" y="20" width="27" height="27"/>
+                                <rect key="frame" x="325" y="20" width="30" height="30"/>
+                                <color key="tintColor" name="orange-3"/>
                                 <state key="normal" backgroundImage="settings"/>
                                 <connections>
-                                    <segue destination="vaP-Gx-1Li" kind="show" id="P30-ek-r6E"/>
+                                    <segue destination="vaP-Gx-1Li" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="P30-ek-r6E"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVy-bA-Wbq">
-                                <rect key="frame" x="0.0" y="85" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="97" width="375" height="70"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoQ-FU-fNw">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="70"/>
@@ -50,49 +51,69 @@
                                             <constraint firstAttribute="width" secondItem="NoQ-FU-fNw" secondAttribute="height" multiplier="16:35" id="dad-w2-LRl"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-orange" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUg-BM-BZf">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUg-BM-BZf">
                                         <rect key="frame" x="32" y="0.0" width="176" height="70"/>
+                                        <color key="tintColor" name="orange-3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="pU7-2c-XWY"/>
                                             <constraint firstAttribute="width" constant="176" id="rND-nu-8um"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="mSC-IJ-9E1">
-                                        <rect key="frame" x="47" y="10" width="281" height="50.5"/>
+                                        <rect key="frame" x="58" y="2" width="259" height="52"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uef-lW-L1L">
-                                                <rect key="frame" x="0.0" y="0.0" width="97" height="50.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.00" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uef-lW-L1L">
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="52"/>
                                                 <color key="backgroundColor" name="orange-3"/>
                                                 <color key="textColor" name="white"/>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Black" family="Proxima Nova" pointSize="35"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Black" family="Proxima Nova" pointSize="44"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Dl-ZF-K3L">
-                                                <rect key="frame" x="184" y="0.0" width="97" height="50.5"/>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Dl-ZF-K3L">
+                                                <rect key="frame" x="173" y="0.0" width="86" height="52"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" name="white"/>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Black" family="Proxima Nova" pointSize="35"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Black" family="Proxima Nova" pointSize="44"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEASUREMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MG-pS-BF0">
+                                        <rect key="frame" x="48" y="51.5" width="106.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="14"/>
+                                        <color key="textColor" name="white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEASUREMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpF-io-Ubw">
+                                        <rect key="frame" x="221" y="51.5" width="106.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="14"/>
+                                        <color key="textColor" name="white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" name="orange-2"/>
                                 <constraints>
                                     <constraint firstItem="aUg-BM-BZf" firstAttribute="leading" secondItem="NoQ-FU-fNw" secondAttribute="trailing" id="0vK-r6-oYz"/>
                                     <constraint firstItem="NoQ-FU-fNw" firstAttribute="centerY" secondItem="TVy-bA-Wbq" secondAttribute="centerY" id="AA7-vM-OWj"/>
+                                    <constraint firstAttribute="bottom" secondItem="kpF-io-Ubw" secondAttribute="bottom" constant="2" id="Bpr-gE-Xz8"/>
                                     <constraint firstAttribute="bottom" secondItem="aUg-BM-BZf" secondAttribute="bottom" id="HOi-ss-ETb"/>
+                                    <constraint firstItem="kpF-io-Ubw" firstAttribute="centerX" secondItem="9Dl-ZF-K3L" secondAttribute="centerX" id="KvU-tt-Nmh"/>
                                     <constraint firstAttribute="height" constant="70" id="Ky8-wf-LiJ"/>
+                                    <constraint firstItem="5MG-pS-BF0" firstAttribute="centerX" secondItem="Uef-lW-L1L" secondAttribute="centerX" id="Rx4-RX-xE2"/>
                                     <constraint firstItem="aUg-BM-BZf" firstAttribute="top" secondItem="TVy-bA-Wbq" secondAttribute="top" id="Vo8-pU-7N3"/>
                                     <constraint firstItem="NoQ-FU-fNw" firstAttribute="leading" secondItem="TVy-bA-Wbq" secondAttribute="leading" id="YgJ-TJ-pPR"/>
+                                    <constraint firstAttribute="bottom" secondItem="5MG-pS-BF0" secondAttribute="bottom" constant="2" id="ZGN-7L-1HM"/>
+                                    <constraint firstItem="mSC-IJ-9E1" firstAttribute="top" secondItem="TVy-bA-Wbq" secondAttribute="top" constant="2" id="iga-Io-Qup"/>
                                     <constraint firstItem="mSC-IJ-9E1" firstAttribute="centerX" secondItem="TVy-bA-Wbq" secondAttribute="centerX" id="mxa-YT-0Mn"/>
-                                    <constraint firstItem="mSC-IJ-9E1" firstAttribute="centerY" secondItem="TVy-bA-Wbq" secondAttribute="centerY" id="oHN-B3-zic"/>
                                     <constraint firstItem="NoQ-FU-fNw" firstAttribute="top" secondItem="TVy-bA-Wbq" secondAttribute="top" id="zMo-nO-Mwr"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kb-sG-QnW">
-                                <rect key="frame" x="70" y="581" width="235" height="36"/>
+                                <rect key="frame" x="70" y="601" width="235" height="36"/>
                                 <color key="backgroundColor" name="white"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="qXL-Vy-TqJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="20"/>
                                 <state key="normal" title="CONVERT">
                                     <color key="titleColor" name="black"/>
@@ -103,189 +124,151 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="h4u-mb-O48">
-                                <rect key="frame" x="65.5" y="180" width="60" height="393"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UX7-Ig-6NB">
+                                <rect key="frame" x="55" y="187" width="92.5" height="394"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKV-E1-LZT">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp0-uJ-mg4">
+                                        <rect key="frame" x="0.0" y="0.0" width="92.5" height="92.5"/>
+                                        <color key="backgroundColor" name="white"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="XGk-ER-wcz"/>
+                                            <constraint firstAttribute="width" secondItem="gp0-uJ-mg4" secondAttribute="height" multiplier="1:1" id="qMc-R9-nV5"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="measure-milligram"/>
+                                        <color key="tintColor" name="orange-3"/>
+                                        <state key="normal" image="mg"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="mgInputAction:" destination="Vbq-xO-B8K" eventType="touchUpInside" id="FyJ-M1-HwV"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MILLIGRAM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndm-gw-7hx">
-                                        <rect key="frame" x="0.0" y="75" width="60" height="12"/>
-                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vg-1F-M7P">
-                                        <rect key="frame" x="0.0" y="102" width="60" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcv-QN-28j">
+                                        <rect key="frame" x="0.0" y="100.5" width="92.5" height="92.5"/>
+                                        <color key="backgroundColor" name="white"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Sdc-8a-KEw"/>
+                                            <constraint firstAttribute="width" secondItem="zcv-QN-28j" secondAttribute="height" multiplier="1:1" id="39Q-Ld-ijW"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="measure-teaspoon"/>
+                                        <color key="tintColor" name="orange-3"/>
+                                        <state key="normal" image="teaspoon"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tspInputAction:" destination="Vbq-xO-B8K" eventType="touchUpInside" id="y5U-yx-x1s"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEASPOON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDn-td-azh">
-                                        <rect key="frame" x="0.0" y="177" width="60" height="12"/>
-                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cel-qy-1WN">
-                                        <rect key="frame" x="0.0" y="204" width="60" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHo-j4-Eig">
+                                        <rect key="frame" x="0.0" y="201" width="92.5" height="92.5"/>
+                                        <color key="backgroundColor" name="white"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="9Bv-2o-MJH"/>
+                                            <constraint firstAttribute="width" secondItem="bHo-j4-Eig" secondAttribute="height" multiplier="1:1" id="w1G-dY-0gn"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="measure-tablespoon"/>
+                                        <color key="tintColor" name="orange-3"/>
+                                        <state key="normal" image="tablespoon"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tbspInputAction:" destination="Vbq-xO-B8K" eventType="touchUpInside" id="Rxl-se-sJo"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TABLESPOON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fld-WZ-ipz">
-                                        <rect key="frame" x="0.0" y="279" width="60" height="12"/>
-                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI9-f1-29I">
-                                        <rect key="frame" x="0.0" y="306" width="60" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dk8-kZ-ya5">
+                                        <rect key="frame" x="0.0" y="301.5" width="92.5" height="92.5"/>
+                                        <color key="backgroundColor" name="white"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Pna-MP-siu"/>
+                                            <constraint firstAttribute="width" secondItem="Dk8-kZ-ya5" secondAttribute="height" multiplier="1:1" id="ShM-oM-wnL"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="measure-cup"/>
+                                        <color key="tintColor" name="orange-3"/>
+                                        <state key="normal" image="cup"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cupInputAction:" destination="Vbq-xO-B8K" eventType="touchUpInside" id="raT-hZ-4Gj"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5Y-4L-Owb">
-                                        <rect key="frame" x="0.0" y="381" width="60" height="12"/>
-                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="r8O-CN-ECb"/>
-                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Dmf-Pk-nZG">
-                                <rect key="frame" x="249.5" y="180" width="60" height="393"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XM6-8G-heN">
+                                <rect key="frame" x="228" y="187" width="92.5" height="394"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrm-20-Xu3">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGP-fs-56C">
+                                        <rect key="frame" x="0.0" y="0.0" width="92.5" height="92.5"/>
+                                        <color key="backgroundColor" name="white"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="t5Z-Z1-NOG"/>
+                                            <constraint firstAttribute="width" secondItem="SGP-fs-56C" secondAttribute="height" multiplier="1:1" id="Re4-8q-P8I"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="measure-milligram"/>
+                                        <color key="tintColor" name="orange-3"/>
+                                        <state key="normal" image="mg"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="mgOutputAction:" destination="Vbq-xO-B8K" eventType="touchUpInside" id="pYd-dz-ybW"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MILLIGRAM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMZ-fz-anO">
-                                        <rect key="frame" x="0.0" y="75" width="60" height="12"/>
-                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hp3-aF-T0c">
-                                        <rect key="frame" x="0.0" y="102" width="60" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRU-0m-qos">
+                                        <rect key="frame" x="0.0" y="100.5" width="92.5" height="92.5"/>
+                                        <color key="backgroundColor" name="white"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="51z-7z-kFx"/>
+                                            <constraint firstAttribute="width" secondItem="fRU-0m-qos" secondAttribute="height" multiplier="1:1" id="K2d-u0-h4h"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="measure-teaspoon"/>
+                                        <color key="tintColor" name="orange-3"/>
+                                        <state key="normal" image="teaspoon"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tspOutputAction:" destination="Vbq-xO-B8K" eventType="touchUpInside" id="tGn-LC-Yt8"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEASPOON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y1-JF-veW">
-                                        <rect key="frame" x="0.0" y="177" width="60" height="12"/>
-                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZj-Ks-pcZ">
-                                        <rect key="frame" x="0.0" y="204" width="60" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cl6-68-CH4">
+                                        <rect key="frame" x="0.0" y="201" width="92.5" height="92.5"/>
+                                        <color key="backgroundColor" name="white"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="c7f-uz-BPd"/>
+                                            <constraint firstAttribute="width" secondItem="Cl6-68-CH4" secondAttribute="height" multiplier="1:1" id="Vws-5b-8O0"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="measure-tablespoon"/>
+                                        <color key="tintColor" name="orange-3"/>
+                                        <state key="normal" image="tablespoon"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tbspOutputAction:" destination="Vbq-xO-B8K" eventType="touchUpInside" id="tBb-Rh-Egc"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TABLESPOON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVY-Bu-y18">
-                                        <rect key="frame" x="0.0" y="279" width="60" height="12"/>
-                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2a-xz-e3H">
-                                        <rect key="frame" x="0.0" y="306" width="60" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZc-n4-vGl">
+                                        <rect key="frame" x="0.0" y="301.5" width="92.5" height="92.5"/>
+                                        <color key="backgroundColor" name="white"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="iTs-7D-CIr"/>
+                                            <constraint firstAttribute="width" secondItem="WZc-n4-vGl" secondAttribute="height" multiplier="1:1" id="7qN-R7-szB"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="measure-cup"/>
+                                        <color key="tintColor" name="orange-3"/>
+                                        <state key="normal" image="cup"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cupOutputAction:" destination="Vbq-xO-B8K" eventType="touchUpInside" id="XZh-j3-sG4"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l14-tK-DL9">
-                                        <rect key="frame" x="0.0" y="381" width="60" height="12"/>
-                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="10"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="QgH-9T-91K"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uJd-xm-mcR"/>
@@ -293,55 +276,209 @@
                         <constraints>
                             <constraint firstItem="TVy-bA-Wbq" firstAttribute="leading" secondItem="uJd-xm-mcR" secondAttribute="leading" id="1C4-28-H5z"/>
                             <constraint firstItem="1kb-sG-QnW" firstAttribute="leading" secondItem="uJd-xm-mcR" secondAttribute="leading" constant="70" id="3aC-vc-KWQ"/>
+                            <constraint firstItem="1kb-sG-QnW" firstAttribute="top" secondItem="XM6-8G-heN" secondAttribute="bottom" constant="20" id="7Om-nc-AKk"/>
                             <constraint firstItem="TVy-bA-Wbq" firstAttribute="top" secondItem="Tit-Hz-s50" secondAttribute="bottom" constant="20" id="BaN-lf-zTn"/>
                             <constraint firstItem="Tit-Hz-s50" firstAttribute="top" secondItem="uJd-xm-mcR" secondAttribute="top" constant="30" id="Ch0-OV-mZs"/>
+                            <constraint firstItem="XM6-8G-heN" firstAttribute="top" secondItem="TVy-bA-Wbq" secondAttribute="bottom" constant="20" id="DA3-bL-Mwx"/>
                             <constraint firstItem="x7W-CP-QMB" firstAttribute="top" secondItem="uJd-xm-mcR" secondAttribute="top" constant="20" id="G5r-ma-HGd"/>
                             <constraint firstItem="uJd-xm-mcR" firstAttribute="trailing" secondItem="x7W-CP-QMB" secondAttribute="trailing" constant="20" id="J6c-ab-2Rv"/>
-                            <constraint firstItem="h4u-mb-O48" firstAttribute="top" secondItem="TVy-bA-Wbq" secondAttribute="bottom" constant="25" id="NoG-5i-UTc"/>
+                            <constraint firstItem="XM6-8G-heN" firstAttribute="centerX" secondItem="9Dl-ZF-K3L" secondAttribute="centerX" id="JWG-X1-Nxw"/>
                             <constraint firstItem="Tit-Hz-s50" firstAttribute="leading" secondItem="uJd-xm-mcR" secondAttribute="leading" constant="20" id="ROV-KH-dNj"/>
                             <constraint firstItem="uJd-xm-mcR" firstAttribute="bottom" secondItem="1kb-sG-QnW" secondAttribute="bottom" constant="30" id="RPA-EE-viF"/>
+                            <constraint firstItem="1kb-sG-QnW" firstAttribute="top" secondItem="UX7-Ig-6NB" secondAttribute="bottom" constant="20" id="SLs-K4-LQd"/>
                             <constraint firstItem="TVy-bA-Wbq" firstAttribute="trailing" secondItem="uJd-xm-mcR" secondAttribute="trailing" id="Zti-qC-sc8"/>
                             <constraint firstItem="uJd-xm-mcR" firstAttribute="trailing" secondItem="1kb-sG-QnW" secondAttribute="trailing" constant="70" id="aCT-Fr-7OZ"/>
+                            <constraint firstItem="UX7-Ig-6NB" firstAttribute="centerX" secondItem="Uef-lW-L1L" secondAttribute="centerX" id="apX-jy-RUl"/>
                             <constraint firstItem="uJd-xm-mcR" firstAttribute="trailing" secondItem="Tit-Hz-s50" secondAttribute="trailing" constant="20" id="egb-Gg-GWa"/>
-                            <constraint firstItem="h4u-mb-O48" firstAttribute="centerX" secondItem="Uef-lW-L1L" secondAttribute="centerX" id="hZL-HB-vKu"/>
-                            <constraint firstItem="Dmf-Pk-nZG" firstAttribute="top" secondItem="TVy-bA-Wbq" secondAttribute="bottom" constant="25" id="yDr-dj-10P"/>
-                            <constraint firstItem="Dmf-Pk-nZG" firstAttribute="centerX" secondItem="9Dl-ZF-K3L" secondAttribute="centerX" id="yFF-zn-PCb"/>
+                            <constraint firstItem="UX7-Ig-6NB" firstAttribute="top" secondItem="TVy-bA-Wbq" secondAttribute="bottom" constant="20" id="oJ4-1y-sua"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BXz-9D-4xD"/>
                     <connections>
+                        <outlet property="cupInputButton" destination="Dk8-kZ-ya5" id="pe9-Z1-OCt"/>
+                        <outlet property="cupOutputButton" destination="WZc-n4-vGl" id="FmW-yV-imY"/>
                         <outlet property="inputField" destination="Uef-lW-L1L" id="W6F-u5-wDa"/>
+                        <outlet property="inputMeasurement" destination="5MG-pS-BF0" id="x15-EB-fp3"/>
+                        <outlet property="mgInputButton" destination="gp0-uJ-mg4" id="QIU-ng-0q2"/>
+                        <outlet property="mgOutputButton" destination="SGP-fs-56C" id="c90-WU-qOI"/>
+                        <outlet property="outputMeasurement" destination="kpF-io-Ubw" id="D6H-0u-XED"/>
+                        <outlet property="tbspInputButton" destination="bHo-j4-Eig" id="EET-La-VMy"/>
+                        <outlet property="tbspOutputButton" destination="Cl6-68-CH4" id="CAt-xC-wUX"/>
+                        <outlet property="tspInputButton" destination="zcv-QN-28j" id="kZc-VG-w4b"/>
+                        <outlet property="tspOutputButton" destination="fRU-0m-qos" id="Ke8-rP-ChH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrI-HI-4BZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-476" y="-18.440779610194905"/>
+            <point key="canvasLocation" x="-466" y="-35"/>
         </scene>
         <!--Settings-->
         <scene sceneID="So3-Wb-rnv">
             <objects>
                 <viewController id="vaP-Gx-1Li" userLabel="Settings" customClass="SettingsViewController" customModule="idm362_meg394" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KyJ-98-nqN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiS-66-ro0">
-                                <rect key="frame" x="20" y="30" width="335" height="35"/>
-                                <fontDescription key="fontDescription" name="Otama-ep" family="Otama.ep" pointSize="30"/>
+                                <rect key="frame" x="20" y="30" width="335" height="47"/>
+                                <fontDescription key="fontDescription" name="Otama-ep" family="Otama.ep" pointSize="40"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ2-JU-iMf">
                                 <rect key="frame" x="324" y="20" width="31" height="31"/>
                                 <color key="tintColor" name="orange-3"/>
-                                <state key="normal" backgroundImage="settings-close-1"/>
+                                <state key="normal" backgroundImage="settings-close"/>
                                 <connections>
-                                    <segue destination="Vbq-xO-B8K" kind="show" id="a9N-OW-Op6"/>
+                                    <segue destination="Vbq-xO-B8K" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="a9N-OW-Op6"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="191" translatesAutoresizingMaskIntoConstraints="NO" id="INo-fK-R4l">
+                                <rect key="frame" x="41" y="117" width="293.5" height="27.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOUND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kx-zm-k53">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="15"/>
+                                        <color key="textColor" name="white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Aj-pH-Usg">
+                                        <rect key="frame" x="244.5" y="0.0" width="51" height="27.5"/>
+                                        <color key="onTintColor" name="orange-2"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THEME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyY-AQ-5b0">
+                                <rect key="frame" x="41" y="184.5" width="293.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="15"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="VwD-JF-J1C">
+                                <rect key="frame" x="41" y="222" width="130" height="359"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXI-mn-T6S">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="88"/>
+                                        <color key="backgroundColor" name="pink-1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RXI-mn-T6S" secondAttribute="height" multiplier="25:17" id="zkJ-oG-fc5"/>
+                                        </constraints>
+                                        <color key="tintColor" name="pink-3"/>
+                                        <state key="normal" image="cup" backgroundImage="button-arrow"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pinkButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="Wnv-gr-LlK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sID-eL-grh">
+                                        <rect key="frame" x="0.0" y="135" width="130" height="88.5"/>
+                                        <color key="backgroundColor" name="green-1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sID-eL-grh" secondAttribute="height" multiplier="25:17" id="JOZ-qY-mDu"/>
+                                        </constraints>
+                                        <color key="tintColor" name="green-3"/>
+                                        <state key="normal" image="cup" backgroundImage="button-arrow"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="greenButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="Liw-Ae-rEB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHX-Tf-T52">
+                                        <rect key="frame" x="0.0" y="270.5" width="130" height="88.5"/>
+                                        <color key="backgroundColor" name="blue-1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tHX-Tf-T52" secondAttribute="height" multiplier="25:17" id="Neg-wm-94W"/>
+                                        </constraints>
+                                        <color key="tintColor" name="blue-3"/>
+                                        <state key="normal" image="cup" backgroundImage="button-arrow"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="blueButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="dZ8-h8-ps3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="lmN-Lt-ecl"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="fHu-kZ-IS4">
+                                <rect key="frame" x="204.5" y="222" width="130" height="359"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYW-gh-6KV">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="88"/>
+                                        <color key="backgroundColor" name="orange-1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zYW-gh-6KV" secondAttribute="height" multiplier="25:17" id="CnL-KT-TRC"/>
+                                        </constraints>
+                                        <color key="tintColor" name="orange-3"/>
+                                        <state key="normal" image="cup" backgroundImage="button-arrow"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="orangeButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="E4M-Um-sod"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gO-Eh-zah">
+                                        <rect key="frame" x="0.0" y="135" width="130" height="88.5"/>
+                                        <color key="backgroundColor" name="aqua-1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7gO-Eh-zah" secondAttribute="height" multiplier="25:17" id="quK-Te-T30"/>
+                                        </constraints>
+                                        <color key="tintColor" name="aqua-3"/>
+                                        <state key="normal" image="cup" backgroundImage="button-arrow"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="aquaButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="dhU-4X-cnx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnT-NJ-sAv">
+                                        <rect key="frame" x="0.0" y="270.5" width="130" height="88.5"/>
+                                        <color key="backgroundColor" name="purple-1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LnT-NJ-sAv" secondAttribute="height" multiplier="25:17" id="CH3-Bn-rvd"/>
+                                        </constraints>
+                                        <color key="tintColor" name="purple-3"/>
+                                        <state key="normal" image="cup" backgroundImage="button-arrow"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="purpleButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="5Gf-DW-jIr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="r3E-pj-1LF"/>
+                                </constraints>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0Q-XY-9mt">
-                                <rect key="frame" x="70" y="581" width="235" height="36"/>
+                                <rect key="frame" x="70" y="601" width="235" height="36"/>
                                 <color key="backgroundColor" name="white"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="bPB-Yb-PnY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="20"/>
                                 <state key="normal" title="SAVE SETTINGS">
                                     <color key="titleColor" name="black"/>
@@ -352,183 +489,77 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="191" translatesAutoresizingMaskIntoConstraints="NO" id="INo-fK-R4l">
-                                <rect key="frame" x="41" y="105" width="293.5" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOUND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kx-zm-k53">
-                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="31"/>
-                                        <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="15"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Aj-pH-Usg">
-                                        <rect key="frame" x="244.5" y="0.0" width="51" height="31"/>
-                                        <color key="onTintColor" name="orange-2"/>
-                                    </switch>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THEME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyY-AQ-5b0">
-                                <rect key="frame" x="41" y="176" width="293.5" height="17.5"/>
-                                <fontDescription key="fontDescription" name="ProximaNovaCond-Bold" family="Proxima Nova Condensed" pointSize="15"/>
-                                <color key="textColor" name="white"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Pmn-Qx-780">
-                                <rect key="frame" x="41" y="223.5" width="102" height="247.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNn-tH-Q4e">
-                                        <rect key="frame" x="0.0" y="0.0" width="102" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
-                                        <state key="normal" image="theme-pink"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="pinkButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="ZQM-Q9-w4V"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CF-WU-qsI">
-                                        <rect key="frame" x="0.0" y="94" width="102" height="59.5"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
-                                        <state key="normal" image="theme-green"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="greenButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="1VE-7h-ELC"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTS-yc-ydf">
-                                        <rect key="frame" x="0.0" y="187.5" width="102" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
-                                        <state key="normal" image="theme-blue"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="blueButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="HG8-jx-fjq"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="2TZ-TA-WA8">
-                                <rect key="frame" x="232.5" y="223.5" width="102" height="248"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV5-LO-adn">
-                                        <rect key="frame" x="0.0" y="0.0" width="102" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
-                                        <state key="normal" image="theme-orange"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="orangeButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="xmW-Wh-FLM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWL-XJ-al2">
-                                        <rect key="frame" x="0.0" y="94" width="102" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
-                                        <state key="normal" image="theme-aqua"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="aquaButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="Gea-JO-lmT"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ero-vC-UdK">
-                                        <rect key="frame" x="0.0" y="188" width="102" height="60"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
-                                        <state key="normal" image="theme-purple"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="purpleButton:" destination="vaP-Gx-1Li" eventType="touchUpInside" id="YpM-Jn-d4X"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vFX-Di-Vjg"/>
                         <color key="backgroundColor" name="orange-1"/>
                         <constraints>
+                            <constraint firstItem="y0Q-XY-9mt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fHu-kZ-IS4" secondAttribute="bottom" constant="20" id="1Zj-bz-Dbu"/>
                             <constraint firstItem="vFX-Di-Vjg" firstAttribute="trailing" secondItem="wiS-66-ro0" secondAttribute="trailing" constant="20" id="36P-1R-DcO"/>
+                            <constraint firstItem="fHu-kZ-IS4" firstAttribute="top" secondItem="qyY-AQ-5b0" secondAttribute="bottom" constant="20" id="Atn-ew-3nb"/>
                             <constraint firstItem="5Aj-pH-Usg" firstAttribute="trailing" secondItem="qyY-AQ-5b0" secondAttribute="trailing" id="BBr-JI-QMa"/>
-                            <constraint firstItem="2TZ-TA-WA8" firstAttribute="top" secondItem="Pmn-Qx-780" secondAttribute="top" id="IUd-NX-4pj"/>
+                            <constraint firstItem="VwD-JF-J1C" firstAttribute="leading" secondItem="qyY-AQ-5b0" secondAttribute="leading" id="DaU-rE-lBW"/>
+                            <constraint firstItem="y0Q-XY-9mt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VwD-JF-J1C" secondAttribute="bottom" constant="20" id="DeQ-g4-4Sa"/>
                             <constraint firstItem="qyY-AQ-5b0" firstAttribute="top" secondItem="INo-fK-R4l" secondAttribute="bottom" constant="40" id="K0y-By-4a6"/>
                             <constraint firstItem="vFX-Di-Vjg" firstAttribute="trailing" secondItem="y0Q-XY-9mt" secondAttribute="trailing" constant="70" id="PH4-A2-x63"/>
-                            <constraint firstItem="vFX-Di-Vjg" firstAttribute="bottom" secondItem="y0Q-XY-9mt" secondAttribute="bottom" constant="30" id="PLG-YX-MZT"/>
+                            <constraint firstItem="VwD-JF-J1C" firstAttribute="top" secondItem="qyY-AQ-5b0" secondAttribute="bottom" constant="20" id="Pec-fu-vXe"/>
                             <constraint firstItem="INo-fK-R4l" firstAttribute="centerX" secondItem="KyJ-98-nqN" secondAttribute="centerX" id="QGc-xZ-Frv"/>
+                            <constraint firstItem="vFX-Di-Vjg" firstAttribute="bottom" secondItem="y0Q-XY-9mt" secondAttribute="bottom" constant="30" id="RjJ-VN-keU"/>
                             <constraint firstItem="JJ2-JU-iMf" firstAttribute="top" secondItem="vFX-Di-Vjg" secondAttribute="top" constant="20" id="Y7s-Ig-6tn"/>
                             <constraint firstItem="qyY-AQ-5b0" firstAttribute="leading" secondItem="4kx-zm-k53" secondAttribute="leading" id="btG-Tx-dfk"/>
                             <constraint firstItem="wiS-66-ro0" firstAttribute="top" secondItem="vFX-Di-Vjg" secondAttribute="top" constant="30" id="cHV-ww-VlL"/>
-                            <constraint firstItem="5Aj-pH-Usg" firstAttribute="trailing" secondItem="2TZ-TA-WA8" secondAttribute="trailing" id="ctA-sp-jAs"/>
                             <constraint firstItem="INo-fK-R4l" firstAttribute="top" secondItem="wiS-66-ro0" secondAttribute="bottom" constant="40" id="g90-X5-3w7"/>
+                            <constraint firstItem="fHu-kZ-IS4" firstAttribute="trailing" secondItem="5Aj-pH-Usg" secondAttribute="trailing" id="jH3-5W-Fsh"/>
                             <constraint firstItem="y0Q-XY-9mt" firstAttribute="leading" secondItem="vFX-Di-Vjg" secondAttribute="leading" constant="70" id="sod-fn-NGs"/>
                             <constraint firstItem="vFX-Di-Vjg" firstAttribute="trailing" secondItem="JJ2-JU-iMf" secondAttribute="trailing" constant="20" id="wFD-HA-DU8"/>
-                            <constraint firstItem="Pmn-Qx-780" firstAttribute="top" secondItem="qyY-AQ-5b0" secondAttribute="bottom" constant="30" id="wO0-bw-AJY"/>
-                            <constraint firstItem="Pmn-Qx-780" firstAttribute="leading" secondItem="qyY-AQ-5b0" secondAttribute="leading" id="wzG-Fw-iKf"/>
                             <constraint firstItem="wiS-66-ro0" firstAttribute="leading" secondItem="vFX-Di-Vjg" secondAttribute="leading" constant="20" id="zIa-i7-PUI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mf8-ZK-HYd"/>
                     <connections>
-                        <outlet property="aquaButtonOut" destination="YWL-XJ-al2" id="kyk-xA-zSL"/>
-                        <outlet property="blueButtonOut" destination="kTS-yc-ydf" id="kgz-Ds-GNN"/>
+                        <outlet property="aquaButtonOut" destination="7gO-Eh-zah" id="eIL-Pb-gUg"/>
+                        <outlet property="blueButtonOut" destination="tHX-Tf-T52" id="a4G-Cw-mmc"/>
                         <outlet property="closeSettings" destination="JJ2-JU-iMf" id="Z3s-iZ-c3C"/>
-                        <outlet property="greenButtonOut" destination="2CF-WU-qsI" id="VFY-qs-dUu"/>
-                        <outlet property="orangeButtonOut" destination="gV5-LO-adn" id="iFx-lq-Vdf"/>
-                        <outlet property="pinkButtonOut" destination="RNn-tH-Q4e" id="Z8q-b2-xDf"/>
-                        <outlet property="purpleButtonOut" destination="Ero-vC-UdK" id="9H8-Yt-C9T"/>
+                        <outlet property="greenButtonOut" destination="sID-eL-grh" id="FS9-Ev-N7Y"/>
+                        <outlet property="orangeButtonOut" destination="zYW-gh-6KV" id="MlS-gH-sf9"/>
+                        <outlet property="pinkButtonOut" destination="RXI-mn-T6S" id="bbP-7i-S0n"/>
+                        <outlet property="purpleButtonOut" destination="LnT-NJ-sAv" id="6hg-4l-6VZ"/>
                         <outlet property="soundSwitch" destination="5Aj-pH-Usg" id="e5G-RT-fw9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9OI-Ep-I2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="320.80000000000001" y="-18.440779610194905"/>
+            <point key="canvasLocation" x="249" y="-36"/>
         </scene>
     </scenes>
     <resources>
-        <image name="arrow-orange" width="132" height="52.5"/>
-        <image name="measure-cup" width="46" height="45"/>
-        <image name="measure-milligram" width="46" height="46"/>
-        <image name="measure-tablespoon" width="46" height="45"/>
-        <image name="measure-teaspoon" width="46" height="46.5"/>
-        <image name="settings" width="27" height="27"/>
-        <image name="settings-close-1" width="31" height="31"/>
-        <image name="theme-aqua" width="102" height="60"/>
-        <image name="theme-blue" width="102" height="60"/>
-        <image name="theme-green" width="102" height="59.5"/>
-        <image name="theme-orange" width="102" height="60"/>
-        <image name="theme-pink" width="102" height="60"/>
-        <image name="theme-purple" width="102" height="60"/>
+        <image name="arrow" width="177" height="70"/>
+        <image name="button-arrow" width="273" height="137"/>
+        <image name="cup" width="75" height="62"/>
+        <image name="mg" width="59" height="56"/>
+        <image name="settings" width="30" height="30"/>
+        <image name="settings-close" width="31" height="31"/>
+        <image name="tablespoon" width="49" height="95"/>
+        <image name="teaspoon" width="47" height="83"/>
+        <namedColor name="aqua-1">
+            <color red="0.63529411764705879" green="0.88627450980392153" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="aqua-3">
+            <color red="0.17254901960784313" green="0.32549019607843138" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="black">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue-1">
+            <color red="0.63529411764705879" green="0.7803921568627451" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue-3">
+            <color red="0.12156862745098039" green="0.34901960784313724" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green-1">
+            <color red="0.67843137254901964" green="0.92156862745098034" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green-3">
+            <color red="0.043137254901960784" green="0.3843137254901961" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="orange-1">
             <color red="0.94901960784313721" green="0.74509803921568629" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -538,6 +569,18 @@
         </namedColor>
         <namedColor name="orange-3">
             <color red="0.8901960784313725" green="0.31764705882352939" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pink-1">
+            <color red="0.90588235294117647" green="0.75686274509803919" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pink-3">
+            <color red="0.83921568627450982" green="0.27058823529411763" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="purple-1">
+            <color red="0.6705882352941176" green="0.63921568627450975" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="purple-3">
+            <color red="0.20784313725490197" green="0.15294117647058825" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
