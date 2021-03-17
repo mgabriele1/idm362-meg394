@@ -311,6 +311,20 @@ class ViewController: UIViewController {
                         convertButtonOutput.setTitle("CONVERT", for: .normal)
                     }
                     
+                    //LOCK SCREEN BEFORE CONVERT AGAIN IS CLICKED
+                    if (convertButtonOutput.currentTitle == "CONVERT AGAIN") {
+                        //disable buttons and field
+                        inputField.isUserInteractionEnabled = false
+                        mgInputButton.isEnabled = false
+                        mgOutputButton.isEnabled = false
+                        tspInputButton.isEnabled = false
+                        tspOutputButton.isEnabled = false
+                        tbspInputButton.isEnabled = false
+                        tbspOutputButton.isEnabled = false
+                        cupInputButton.isEnabled = false
+                        cupOutputButton.isEnabled = false
+                    }
+                    
                     //RESET SCREEN WHEN CONVERT AGAIN IS CLICKED
                     if (convertButtonOutput.currentTitle == "CONVERT") {
                         
@@ -331,6 +345,17 @@ class ViewController: UIViewController {
                         tspOutputButton.alpha = 0.5
                         tbspOutputButton.alpha = 0.5
                         cupOutputButton.alpha = 0.5
+                        
+                        //enable buttons and field
+                        inputField.isUserInteractionEnabled = true
+                        mgInputButton.isEnabled = true
+                        mgOutputButton.isEnabled = true
+                        tspInputButton.isEnabled = true
+                        tspOutputButton.isEnabled = true
+                        tbspInputButton.isEnabled = true
+                        tbspOutputButton.isEnabled = true
+                        cupInputButton.isEnabled = true
+                        cupOutputButton.isEnabled = true
                     }
                 }
             }
