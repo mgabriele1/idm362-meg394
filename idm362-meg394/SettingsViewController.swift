@@ -34,6 +34,9 @@ class SettingsViewController: UIViewController {
     var themeColorValue:String = "orange"
     var isSoundOnValue:Bool = true
     
+    //check if save button pressed
+    var checkIfSaved:Bool = false
+    
     //AFTER VIEW LOAD
     override func viewDidLoad() {
         super.viewDidLoad() // Do any after loading
@@ -199,11 +202,11 @@ class SettingsViewController: UIViewController {
         let settingsSavedAlert = UIAlertController(title: "Save Settings", message: "Are you sure?", preferredStyle: .actionSheet)
         
         settingsSavedAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(UIAlertAction) in
-            print("save")
+            self.checkIfSaved = true
         }))
         
         settingsSavedAlert.addAction(UIAlertAction(title: "No", style: .destructive, handler: {(UIAlertAction) in
-            print("dont save")
+            self.checkIfSaved = false
         }))
         
         settingsSavedAlert.view.tintColor = UIColor(named: "black")
@@ -218,7 +221,7 @@ class SettingsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "showConvert" {
+        if (segue.identifier == "showConvert" && checkIfSaved == true) {
             let convertView = segue.destination as! ViewController
             convertView.themeColor = themeColorValue
             convertView.isSoundOn = isSoundOnValue
