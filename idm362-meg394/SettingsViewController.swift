@@ -209,8 +209,6 @@ class SettingsViewController: UIViewController {
             self.checkIfSaved = false
         }))
         
-        settingsSavedAlert.view.tintColor = UIColor(named: "black")
-        
         self.present(settingsSavedAlert, animated: true)
     }
     

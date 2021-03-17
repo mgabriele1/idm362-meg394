@@ -243,8 +243,6 @@ class ViewController: UIViewController {
             
             noInputAlert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {(UIAlertAction) in }))
             
-            noInputAlert.view.tintColor = UIColor(named: "black")
-            
             self.present(noInputAlert, animated: true)
             
         } else {
@@ -255,8 +253,6 @@ class ViewController: UIViewController {
                 
                 noOutputAlert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {(UIAlertAction) in }))
                 
-                noOutputAlert.view.tintColor = UIColor(named: "black")
-                
                 self.present(noOutputAlert, animated: true)
                 
             } else {
@@ -266,8 +262,6 @@ class ViewController: UIViewController {
                     let noNumberAlert = UIAlertController(title: "Add Input Number", message: "Please enter a number into the input field to continue", preferredStyle: .actionSheet)
                     
                     noNumberAlert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {(UIAlertAction) in }))
-                    
-                    noNumberAlert.view.tintColor = UIColor(named: "black")
                     
                     self.present(noNumberAlert, animated: true)
                     
