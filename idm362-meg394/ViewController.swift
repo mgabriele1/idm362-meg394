@@ -61,6 +61,9 @@ class ViewController: UIViewController {
     var themeColor:String = "orange"
     var isSoundOn:Bool = true
     
+    var backThemeValue:String = "orange"
+    var backSoundValue:Bool = true
+    
     //convert counter
     var convertCounter: Int = 0
     
@@ -114,9 +117,12 @@ class ViewController: UIViewController {
         }
         
         //PASSED VARIABLES
+        //set equal to other passed to pass back
+        backSoundValue = isSoundOn
+        backThemeValue = themeColor
+        
         //toggle sound
         if (isSoundOn == true) {
-    
             audioPlayer.volume = 1
         } else {
             audioPlayer.volume = 0
@@ -449,6 +455,18 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
 
+    
+    // MARK: - Navigation
 
-}
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if (segue.identifier == "showSettings") {
+            let settingsView = segue.destination as! SettingsViewController
+            settingsView.backThemeColor = backThemeValue
+            settingsView.backSoundOn = backSoundValue
+        }
+    }
 
+} //end

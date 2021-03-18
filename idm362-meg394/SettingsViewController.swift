@@ -34,6 +34,9 @@ class SettingsViewController: UIViewController {
     var themeColorValue:String = "orange"
     var isSoundOnValue:Bool = true
     
+    var backThemeColor:String = "orange"
+    var backSoundOn:Bool = true
+    
     //check if save button pressed
     var checkIfSaved:Bool = false
     
@@ -53,6 +56,28 @@ class SettingsViewController: UIViewController {
         onLabel.alpha = 1
         offLabel.alpha = 0.5
         
+        //use passed back sound to set switch
+        if (backSoundOn == true) {
+            soundSwitch.setOn(true, animated: true)
+        } else {
+            soundSwitch.setOn(false, animated: true)
+        }
+        
+        //use passed back theme
+        if (backThemeColor == "pink") {
+            pinkButton(nil)
+        } else if (backThemeColor == "green") {
+            greenButton(nil)
+        } else if (backThemeColor == "blue") {
+            blueButton(nil)
+        } else if (backThemeColor == "orange") {
+            orangeButton(nil)
+        } else if (backThemeColor == "aqua") {
+            aquaButton(nil)
+        } else if (backThemeColor == "purple") {
+            purpleButton(nil)
+        }
+        
     } //end view load
     
     //ACTION
@@ -70,7 +95,7 @@ class SettingsViewController: UIViewController {
     }
     
     //color buttons
-    @IBAction func pinkButton(_ sender: UIButton) {
+    @IBAction func pinkButton(_ sender: UIButton?) {
         //background color
             self.view.backgroundColor = UIColor(named: "pink-1")
             //switch color
@@ -91,7 +116,7 @@ class SettingsViewController: UIViewController {
             themeColorValue = "pink"
     }
     
-    @IBAction func greenButton(_ sender: UIButton) {
+    @IBAction func greenButton(_ sender: UIButton?) {
         //background color
         self.view.backgroundColor = UIColor(named: "green-1")
         //switch color
@@ -112,7 +137,7 @@ class SettingsViewController: UIViewController {
         themeColorValue = "green"
     }
     
-    @IBAction func blueButton(_ sender: UIButton) {
+    @IBAction func blueButton(_ sender: UIButton?) {
         //background color
         self.view.backgroundColor = UIColor(named: "blue-1")
         //switch color
@@ -133,7 +158,7 @@ class SettingsViewController: UIViewController {
         themeColorValue = "blue"
     }
     
-    @IBAction func orangeButton(_ sender: UIButton) {
+    @IBAction func orangeButton(_ sender: UIButton?) {
         //background color
         self.view.backgroundColor = UIColor(named: "orange-1")
         //switch color
@@ -154,7 +179,7 @@ class SettingsViewController: UIViewController {
         themeColorValue = "orange"
     }
     
-    @IBAction func aquaButton(_ sender: UIButton) {
+    @IBAction func aquaButton(_ sender: UIButton?) {
         //background color
         self.view.backgroundColor = UIColor(named: "aqua-1")
         //switch color
@@ -175,7 +200,7 @@ class SettingsViewController: UIViewController {
         themeColorValue = "aqua"
     }
     
-    @IBAction func purpleButton(_ sender: UIButton) {
+    @IBAction func purpleButton(_ sender: UIButton?) {
         //background color
         self.view.backgroundColor = UIColor(named: "purple-1")
         //switch color
@@ -223,6 +248,10 @@ class SettingsViewController: UIViewController {
             let convertView = segue.destination as! ViewController
             convertView.themeColor = themeColorValue
             convertView.isSoundOn = isSoundOnValue
+        } else if (segue.identifier == "showConvert") {
+            let convertView = segue.destination as! ViewController
+            convertView.themeColor = backThemeColor
+            convertView.isSoundOn = backSoundOn
         }
     }
 
